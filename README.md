@@ -5,11 +5,5 @@ Yelp), an inverted index is a dictionary where each category is associated with 
 
 ![](https://i.imgur.com/RLzhgdr.png)
 
-Why is this important?
-This allows us to easily find, for example, all 
-
-Your task is to design and implement MapReduce algorithms that given a collection of Yelp businesses:
-• compute the inverted index of the categories to businesses (iimaper.py, iireducer.py)
-and output the results in a file called inverted-index.txt
-The collection of businesses is provided in a file yelp_business.csv that follows the same format
-as the original data set provided by Kaggle. The contents of the file might vary when testing your code.
+# Why is this important?
+This allows us to easily find, for example, all French resturants near us.
