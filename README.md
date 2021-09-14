@@ -5,4 +5,4 @@
 ![](https://i.imgur.com/RLzhgdr.png)
 
 # Why is this useful?
-When working with big data, this allows us to easily categorize businesses where we can then target businesses in specific categories for further MapReduce operations.
+When working with big data, this allows us to target businesses in specific categories for further MapReduce operations.
