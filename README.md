@@ -4,5 +4,5 @@
 
 ![](https://i.imgur.com/RLzhgdr.png)
 
-# Why is this important?
-This allows us to easily find, for example, all French resturants near us.
+# Why is this useful?
+When working with big data, this allows us to easily categorize businesses where we can then target businesses in specific categories for further MapReduce operations.
