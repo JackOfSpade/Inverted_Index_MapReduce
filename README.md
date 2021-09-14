@@ -1,10 +1,12 @@
-# Yelp_Businesses_MapReduce
+# Inverted Index MapReduce
 
-This is a simple MapReduce that creates an inverted index that maps categories to businesses. In other words, given a collection of businesses (as provided by
-Yelp), an inverted index is a dictionary where each category is associated with a list of the business ids
-that belong to that category. See the example below:
+This is a simple MapReduce that creates an inverted index which maps categories to businesses. In other words, given a collection of businesses (as provided by
+Yelp), an inverted index is a dictionary where each category is associated with a list of the business ids that belong to that category. 
 
 ![](https://i.imgur.com/RLzhgdr.png)
+
+Why is this important?
+This allows us to easily find, for example, all 
 
 Your task is to design and implement MapReduce algorithms that given a collection of Yelp businesses:
 • compute the inverted index of the categories to businesses (iimaper.py, iireducer.py)
