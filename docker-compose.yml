@@ -1,0 +1,27 @@
+# Compose file format version
+version: "3.7"
+
+# Contains services where each service contains configurations that will be applied to each container started for that service.
+services:
+     my_service:
+          # Where the Dockerfile is
+          build: .
+          working_dir: /my_project
+          volumes:
+               - type: bind
+                 source: ./Results
+                 target: /my_project/Results
+               - type: bind
+                 source: ./Mapper_and_Reducer
+                 target: /my_project/Mapper_and_Reducer
+          # Interactive Console
+          stdin_open: True   # Same as docker run -i
+          tty: True          # Same as docker run -t
+          # Ports to expose to HOST
+          ports:
+               - "9870:9870"
+               - "8088:8088"
+# Declare named volumes and their optional parameters.
+volumes:
+     Results:
+     Mapper_and_Reducer:

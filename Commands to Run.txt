@@ -1,0 +1,8 @@
+Test:
+
+hdfs dfs -put ./yelp_business_test.txt /; hdfs dfs -rm -r /output; hadoop jar /usr/hadoop-3.0.0/share/hadoop/tools/lib/hadoop-streaming-3.0.0.jar -mapper /my_project/Mapper_and_Reducer/iimaper.py -reducer /my_project/Mapper_and_Reducer/iireducer.py -input /yelp_business_test.txt -output /output; hdfs dfs -get /output/part*; mv part* inverted-index.txt; cat inverted-index.txt
+
+
+Production:
+
+hdfs dfs -put ./yelp_business.csv /; hdfs dfs -rm -r /output; hadoop jar /usr/hadoop-3.0.0/share/hadoop/tools/lib/hadoop-streaming-3.0.0.jar -mapper /my_project/Mapper_and_Reducer/iimaper.py -reducer /my_project/Mapper_and_Reducer/iireducer.py -input /yelp_business.csv -output /output; hdfs dfs -get /output/part*; mv part* inverted-index.txt; cat inverted-index.txt
